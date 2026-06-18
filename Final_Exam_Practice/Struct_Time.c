@@ -15,5 +15,5 @@ int differenceBetweenTimePeriod(struct TIME start,struct TIME stop,struct TIME d
 int main() {
    printf("This program is designed to ")
 
-    return 0
+    return 0;
 }
