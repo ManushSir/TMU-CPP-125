@@ -10,7 +10,7 @@ struct TIME{
 };
 int differenceBetweenTimePeriod(struct TIME start,struct TIME stop,struct TIME *difference){
     if(stop.seconds<start.seconds){
-     stop.seconds += 60;
+     stop.seconds += 60;/* This assigns the time in seconds*/
      stop.minutes -= 1;
     }
     difference->seconds = stop.seconds-start.seconds;
@@ -37,4 +37,3 @@ int main() {
    printf("\nThe Time difference is:%d : %d : %d \n",difference.hour,difference.minutes,difference.seconds);
     return 0;
 }
-t
